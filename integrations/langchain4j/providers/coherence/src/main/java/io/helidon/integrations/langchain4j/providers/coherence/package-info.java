@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Oracle and/or its affiliates.
+ * Copyright (c) 2025 Oracle and/or its affiliates.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,7 @@
  * limitations under the License.
  */
 
-package io.helidon.integrations.db.h2;
-
-import com.oracle.svm.core.annotate.Delete;
-import com.oracle.svm.core.annotate.TargetClass;
-
 /**
- * This class is related to in-memory support and is removed from native-image.
+ * Provides integration with Coherence embedding store.
  */
-@Delete
-@TargetClass(className = "org.h2.engine.Session")
-public final class SessionSubstitution {
-}
+package io.helidon.integrations.langchain4j.providers.coherence;
